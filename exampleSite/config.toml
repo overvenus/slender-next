@@ -1,7 +1,7 @@
 # config.toml
 # https://github.com/CrimsonRay/slender
 
-baseurl = "https://example.com/"
+baseurl = "https://crimsonray.github.io/slender"
 title = "Slender"
 languageCode = "en-US"
 MetaDataFormat = "toml"
@@ -61,11 +61,11 @@ PaginatePath = "/"
     [[menu.main]]
     identifier = "home"
     name       = "home"
-    url        = "/"
+    url        = ""
     weight     = 0
 
     [[menu.main]]
     identifier = "about"
     name       = "about"
-    url        = "/about/"
+    url        = "about/"
     weight     = 1
