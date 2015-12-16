@@ -15,7 +15,7 @@ Minimalist theme for [Hugo](http://gohugo.io/) with [base16](https://github.com/
 
 ### Screenshot
 
-![screenshot](images/screenshot.png)
+![screenshot](slender/images/screenshot.png)
 
 ### Features
 
@@ -29,7 +29,7 @@ Minimalist theme for [Hugo](http://gohugo.io/) with [base16](https://github.com/
 
 ### Color Schemes
 
-![slender-color-schemes](images/slender-color-schemes.png)
+![slender-color-schemes](slender/images/slender-color-schemes.png)
 
 ### Installation
 
