@@ -1,0 +1,13 @@
+{{ if eq .Site.LanguageCode "zh-Hans" }}
+    {{ if isset .Site.Params "duoshuoShortname" }}
+        {{ partial "comments/duoshuo.html" . }}
+    {{ else if isset .Site.Params "disqusShortname" }}
+        {{ partial "comments/disqus.html" . }}
+    {{ end }}
+{{ else }}
+    {{ if isset .Site.Params "disqusShortname" }}
+        {{ partial "comments/disqus.html" . }}
+    {{ else if isset .Site.Params "duoshuoShortname" }}
+        {{ partial "comments/duoshuo.html" . }}
+    {{ end }}
+{{ end }}

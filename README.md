@@ -99,6 +99,10 @@ PaginatePath = "/"
     # Remove, comment, or leave it blank if you don't have one.
     ganalytics = "your-google-analytics-tracking-code"
 
+    # comment
+    duoshuoShortname = "your-duoshuo"
+    disqusShortname = "you-disqus"
+
 [menu]
 
     # Menu for the nav bar.
