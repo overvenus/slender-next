@@ -1,6 +1,6 @@
 # theme.toml
 
-name = "Slender"
+name = "Slender-next"
 license = "MIT"
 licenselink = "https://github.com/CrimsonRay/slender/blob/master/LICENSE.md"
 description = "Minimalist theme for Hugo with base16 color schemes."
