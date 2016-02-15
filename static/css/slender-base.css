@@ -38,8 +38,18 @@ nav ul li {
     list-style-type: none;
     display: inline-block;
     margin-top: 32px;
-    padding-left: 12px;
-    padding-right: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-bottom: 1px solid transparent;
+}
+
+nav li:hover {
+    /*TODO: sync color scheme */
+    border-bottom: 1px solid;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 /* Header */
@@ -54,6 +64,9 @@ h1.brand {
     text-transform: uppercase;
     letter-spacing: 6px;
     text-align: center;
+    /*TODO: sync color scheme */
+    color: white;
+    background-color: black;
 }
 
 h1.title {
