@@ -95,9 +95,10 @@ PaginatePath = "/"
     linkedin = "url-to-your-linkedin"
     facebook = "url-to-your-facebook"
 
-    # Google Analytics
+    # Analytics
     # Remove, comment, or leave it blank if you don't have one.
-    ganalytics = "your-google-analytics-tracking-code"
+    googleAnalytics = "GoogleAnalyticsParams"
+    baiduTongji = "BaiduTongji"
 
     # comment
     duoshuoShortname = "your-duoshuo"
