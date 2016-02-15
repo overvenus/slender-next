@@ -74,8 +74,8 @@ PaginatePath = "/"
     # Tagline; HTML accepted here. Keep it concise.
     tagline = "Your Tagline"
 
-    # Footer; Markdown accepted here.
-    footer = "Copyright 2015 &copy; Your Name"
+    # copyright, see http://creativecommons.org/
+    licenses = "by-nc-sa"
 
     # Description and keywords for <meta> tags.
     # Remember to set this for your main page.
