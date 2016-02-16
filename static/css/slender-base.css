@@ -185,12 +185,6 @@ footer p {
     padding-top: 24px;
 }
 
-/* overflows */
-
-.MathJax_Display, .MathJax_SVG_Display,
-code, blockquote {
-    overflow: auto;
-}
 
 /* Smaller screen sizes */
 
@@ -202,6 +196,14 @@ code, blockquote {
         margin-left: 6px;
         margin-right: 6px;
     }
+
+    /* overflows */
+
+    .MathJax_Display, .MathJax_SVG_Display,
+    code, blockquote {
+        overflow: auto;
+    }
+
     #article-listing {
         margin: 20px;
     }
