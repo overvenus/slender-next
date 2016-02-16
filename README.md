@@ -104,6 +104,13 @@ PaginatePath = "/"
     duoshuoShortname = "your-duoshuo"
     disqusShortname = "you-disqus"
 
+    # MathJax
+    # see: http://mathjax.readthedocs.org/en/latest/options/hub.html
+    mathjax = true # enable
+    mathHideMenu = true
+    mathZoom = "Double-Click"
+    mathRenderer = "SVG"
+
 [menu]
 
     # Menu for the nav bar.

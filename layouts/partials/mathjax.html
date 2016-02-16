@@ -1,12 +1,22 @@
-{{ if .Params.mathjax }}
+{{ if and .Site.Params.mathjax .Params.mathjax }}
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
+        {{ with .Site.Params }}
+            {{ with .mathHideMenu }}
+                {{ if . }}
         showMathMenu: false,
         showMathMenuMSIE: false,
+                {{ end }}
+            {{ end }}
         menuSetting: {
-          zoom: "Double-Click",
-          renderer: "SVG"
+            {{ with .mathZoom }}
+          zoom: "{{ . }}",
+            {{ end }}
+            {{ with .mathRenderer }}
+          renderer: "{{ . }}"
+            {{ end }}
         },
+        {{ end }}
         tex2jax: {
           inlineMath: [['$','$'], ['\\(','\\)']],
           displayMath: [['$$','$$'], ['\\[','\\]']],
