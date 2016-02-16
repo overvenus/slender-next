@@ -185,11 +185,22 @@ footer p {
     padding-top: 24px;
 }
 
+/* overflows */
+
+.MathJax_Display, .MathJax_SVG_Display,
+code, blockquote {
+    overflow: auto;
+}
+
 /* Smaller screen sizes */
 
 @media (max-width: 768px) {
     header h1 {
         font-size: 48px;
+    }
+    nav ul li {
+        margin-left: 6px;
+        margin-right: 6px;
     }
     #article-listing {
         margin: 20px;
