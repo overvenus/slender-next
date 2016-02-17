@@ -50,7 +50,7 @@ nav a {
 /* Header */
 
 header {
-    height: 350px;
+    height: 30%;
 }
 
 h1.brand {
@@ -80,6 +80,38 @@ header p {
 header p a .fa {
     font-size: 34px;
     padding-right: 10px;
+}
+
+/* Table of Content */
+
+#toc {
+    position: fixed;
+    padding: 10px 10px 10px 5px;
+    margin-left: 80%;
+    overflow: auto;
+    border-left: 2px solid;
+    max-width: 20%;
+    max-height: 50%;
+}
+
+#toc li {
+    display: list-item;
+    border-bottom: 0px;
+}
+
+#toc a:hover {
+    /* TODO: sync color scheme */
+    border-bottom: 1px solid;
+}
+
+#TableOfContents ul {
+    text-align: left;
+}
+
+@media (max-width: 1360px) {
+    #toc {
+        display: none;
+    }
 }
 
 /* Pagination */
