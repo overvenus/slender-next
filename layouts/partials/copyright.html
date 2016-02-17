@@ -1,10 +1,10 @@
 <div>
     <p>
         {{ if not (eq (.Date.Format "2006") "0001")}}
-            Copyright {{ .Date.Format "2006" }} &copy; {{ .Site.Author.name }}
+            Copyright {{ .Date.Format "2006" }} <i class="fa fa-copyright fa-fw"></i> {{ .Site.Author.name }}
         {{ else }}
-            &copy; {{ .Site.Author.name }}        
+            <i class="fa fa-copyright fa-fw"></i> {{ .Site.Author.name }}        
         {{ end }}
-         </br><i class="fa fa-creative-commons fa-fw"></i>{{ .Site.Params.licenses }}
+         </br><i class="fa fa-creative-commons fa-fw"></i> {{ .Site.Params.licenses }}
     </p>
 </div>
