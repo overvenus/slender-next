@@ -221,7 +221,33 @@ article {
     text-decoration: none;
 }
 
+/* Terms */
 
+#terms-content {
+    margin: 88px auto;
+    max-width: 768px;
+    text-align: center;
+}
+
+#terms-content ul {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 40px 0px 40px 0px;
+}
+
+#terms-content ul li {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+}
+
+#terms-content a {
+    text-decoration: none;
+}
+
+#terms-content a:hover {
+    /* TODO: sync color scheme */
+    border-bottom: 1px solid;
+}
 
 /* Footer */
 
