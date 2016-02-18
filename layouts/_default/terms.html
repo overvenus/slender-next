@@ -1,8 +1,9 @@
 {{ partial "header.html" . }}
 <div class="terms-content">
-    {{ printf "%v" .Site }}
     {{ if eq .Data.Singular "tag" }}
         {{ partial "tags/terms-tags.html" . }}
+    {{ else if eq .Data.Singular "archive" }} <!-- dirty hack -->
+        {{ partial "archive.html" . }}
     {{ end }}
 </div>
 {{ partial "footer.html" . }}
