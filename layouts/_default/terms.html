@@ -1,17 +1,16 @@
 {{ partial "header.html" . }}
-<div id="terms-content">
+<div class="terms-content">
   <p> Tags </p>
-  <ul>
+  <ul class="terms-list">
   {{ $baseurl := .Site.BaseURL }}
   {{ $data := .Data }}
   {{ range $key,$value := .Data.Terms.ByCount }}
-    <li>{
+    <li>
+      [
       <a href="{{ $baseurl }}{{ $data.Plural }}/{{ $value.Name | urlize }}">
-        {{ $value.Name }}
+        {{ $value.Name }} <strong>{{ $value.Count }}</strong>
       </a>
-      <strong>
-        {{ $value.Count }}
-      </strong>}
+      ]
     </li>
   {{ end }}
   </ul>

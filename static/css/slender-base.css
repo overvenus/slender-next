@@ -206,47 +206,48 @@ article {
     color: #000 !important;
 }
 
-/* Tags */
+/* Tags & Terms */
+.terms-content,
 .article-tags {
-    text-align: center;
-}
-
-.article-tags ul li {
-    display: inline-block;
-    margin-right: 6px;
-    border-bottom: 1px solid transparent;
-}
-
-.article-tags a {
-    text-decoration: none;
-}
-
-/* Terms */
-
-#terms-content {
     margin: 88px auto;
     max-width: 768px;
     text-align: center;
 }
 
-#terms-content ul {
+.terms-content .terms-list li,
+.article-tags ul li {
+    display: inline-block;
+    margin: 0px 10px;
+    border-bottom: 1px solid transparent;
+}
+
+.terms-content a,
+.article-tags a {
+    text-decoration: none;
+}
+
+.terms-content .terms-list {
     border-top: 2px solid;
     border-bottom: 2px solid;
     padding: 40px 0px 40px 0px;
 }
 
-#terms-content ul li {
-    display: inline-block;
-    margin: 0px 10px 0px 10px;
+.terms-content ol.terms-list {
+    margin: 0px 10%;
 }
 
-#terms-content a {
-    text-decoration: none;
+.terms-content ol.terms-list li {
+    display: list-item;
+    margin: 0px 20%;
+    text-align: left;
 }
 
-#terms-content a:hover {
-    /* TODO: sync color scheme */
-    border-bottom: 1px solid;
+ol.terms-list li a {
+    margin-left: 10px;
+}
+
+ol.terms-list li small {
+    padding-right: 10px;
 }
 
 /* Footer */

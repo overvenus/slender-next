@@ -36,6 +36,7 @@
     background-color: #000;
 }
 
+.color-scheme-white .terms-content a:hover,
 .color-scheme-white .article-tags li:hover,
 .color-scheme-white nav li:hover {
     border-bottom: 1px solid;
@@ -65,6 +66,7 @@
     padding: 2px 4px;
 }
 
+.color-scheme-black .terms-content a:hover,
 .color-scheme-black .article-tags li:hover,
 .color-scheme-black nav li:hover {
     border-bottom: 1px solid #F5F5F5;
@@ -94,6 +96,7 @@
     padding: 2px 4px;
 }
 
+.color-scheme-red .terms-content a:hover,
 .color-scheme-red .article-tags li:hover,
 .color-scheme-red li:hover {
     border-bottom: 1px solid #FFF
@@ -123,6 +126,7 @@
     padding: 2px 4px;
 }
 
+.color-scheme-orange .terms-content a:hover,
 .color-scheme-orange .article-tags li:hover,
 .color-scheme-orange li:hover {
     border-bottom: 1px solid #FFF
@@ -152,6 +156,7 @@
     padding: 2px 4px;
 }
 
+.color-scheme-yellow .terms-content a:hover,
 .color-scheme-yellow .article-tags li:hover,
 .color-scheme-yellow li:hover {
     border-bottom: 1px solid #FFF
@@ -181,6 +186,7 @@
     padding: 2px 4px;
 }
 
+.color-scheme-green .terms-content a:hover,
 .color-scheme-green .article-tags li:hover,
 .color-scheme-green li:hover {
     border-bottom: 1px solid #FFF
@@ -210,6 +216,7 @@
     padding: 2px 4px;
 }
 
+.color-scheme-teal .terms-content a:hover,
 .color-scheme-teal .article-tags li:hover,
 .color-scheme-teal li:hover {
     border-bottom: 1px solid #FFF
@@ -239,6 +246,7 @@
     padding: 2px 4px;
 }
 
+.color-scheme-blue .terms-content a:hover,
 .color-scheme-blue .article-tags li:hover,
 .color-scheme-blue li:hover {
     border-bottom: 1px solid #FFF
@@ -268,6 +276,7 @@
     padding: 2px 4px;
 }
 
+.color-scheme-purple .terms-content a:hover,
 .color-scheme-purple .article-tags li:hover,
 .color-scheme-purple li:hover {
     border-bottom: 1px solid #FFF
