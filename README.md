@@ -65,6 +65,9 @@ PaginatePath = "/"
     # Permalink format for blog posts.
     post = "/article/:title/"
 
+[taxonomies]
+    tag = "tags"
+
 [params]
 
     # Change the color scheme of Slender.
