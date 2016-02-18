@@ -6,10 +6,8 @@
  *
  *****************************************************************************/
 
-@import url(https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans);
-
 body {
-    font-family: "Open Sans", Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, "Microsoft YaHei", sans-serif;
     height: 100%;
     margin: 0;
 }
@@ -211,7 +209,7 @@ article {
 .article-tags {
     margin: 88px auto;
     max-width: 768px;
-    text-align: center;
+    text-align: center; 
 }
 
 .terms-content .terms-list li,

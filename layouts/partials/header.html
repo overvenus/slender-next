@@ -3,6 +3,11 @@
     <head>
         {{ partial "meta.html" . }}
         <link rel="icon" href="{{ "/assets/favicon.ico" | absURL }}" type="image/x-icon">
+        {{ if eq .Site.LanguageCode "zh-Hans" }}
+        <link rel="stylesheet" href="{{ "/css/slender-font-zh.css" | absURL }}">
+        {{ else }}
+        <link rel="stylesheet" href="{{ "/css/slender-font.css" | absURL }}">
+        {{ end }}
         <link rel="stylesheet" href="{{ "/css/slender-base.css" | absURL }}">
         <link rel="stylesheet" href="{{ "/css/slender-color-schemes.css" | absURL }}">
         <link rel="stylesheet" href="{{ "/css/font-awesome-4.5.0.min.css" | absURL }}">
