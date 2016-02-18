@@ -1,0 +1,10 @@
+<p> <strong>Archive</strong> </p>
+<ul class="archive-list">
+    {{ range (where .Site.Pages "Section" "post").ByDate.Reverse }}
+    <li>
+        <a href="{{ .RelPermalink }}">
+        <small>{{ .Date.Format "01-02" }}</small> <strong>{{ .Title }}</strong>
+        </a>
+    </li>
+    {{ end }}
+</ul>

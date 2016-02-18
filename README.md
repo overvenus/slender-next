@@ -67,6 +67,7 @@ PaginatePath = "/"
 
 [taxonomies]
     tag = "tags"
+    archive = "archive"
 
 [params]
 
