@@ -214,7 +214,7 @@ article {
     text-align: center;
 }
 
-.terms-content .terms-list li,
+.terms-content .tags-list li,
 .article-tags ul li {
     display: inline-block;
     margin: 0px 10px;
@@ -226,27 +226,27 @@ article {
     text-decoration: none;
 }
 
-.terms-content .terms-list {
+.terms-content .tags-list {
     border-top: 2px solid;
     border-bottom: 2px solid;
     padding: 40px 0px 40px 0px;
 }
 
-.terms-content ol.terms-list {
+.terms-content ol.tags-list {
     margin: 0px 10%;
 }
 
-.terms-content ol.terms-list li {
+.terms-content ol.tags-list li {
     display: list-item;
     margin: 0px 20%;
     text-align: left;
 }
 
-ol.terms-list li a {
+ol.tags-list li a {
     margin-left: 10px;
 }
 
-ol.terms-list li small {
+ol.tags-list li small {
     padding-right: 10px;
 }
 

@@ -1,18 +1,8 @@
 {{ partial "header.html" . }}
 <div class="terms-content">
-  <p> Tags </p>
-  <ul class="terms-list">
-  {{ $baseurl := .Site.BaseURL }}
-  {{ $data := .Data }}
-  {{ range $key,$value := .Data.Terms.ByCount }}
-    <li>
-      [
-      <a href="{{ $baseurl }}{{ $data.Plural }}/{{ $value.Name | urlize }}">
-        {{ $value.Name }} <strong>{{ $value.Count }}</strong>
-      </a>
-      ]
-    </li>
-  {{ end }}
-  </ul>
+    {{ printf "%v" .Site }}
+    {{ if eq .Data.Singular "tag" }}
+        {{ partial "tags/terms-tags.html" . }}
+    {{ end }}
 </div>
 {{ partial "footer.html" . }}
