@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 <div class="terms-content">
     <p>[ {{ .Title }} ]</p>
-     <ol class="terms-list">
+     <ol class="tags-list">
      {{ range .Paginator.Pages }}
         <li>
             <a href="{{ .Permalink }}">
