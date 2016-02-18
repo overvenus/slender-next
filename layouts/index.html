@@ -8,7 +8,7 @@
             on <strong>{{ .Date.Format "Mon, Jan 02, 2006" }}</strong> by <strong>{{ .Site.Author.name }}</strong> &middot; <strong>{{ .ReadingTime }} min reading time</strong>
         </p>
         <p class="article-summary">{{ .Summary }}</p>
-        {{ if .Truncated }}<a href="{{ .Permalink }}"><p class="article-read-more"><a href="{{ .Permalink }}">Read more &rarr;</a></p>{{ end }}
+        {{ if .Truncated }}<p class="article-read-more"><a href="{{ .Permalink }}">Read more &rarr;</a></p>{{ end }}
     </article>
     {{ end }}
     {{ template "_internal/pagination.html" . }}
