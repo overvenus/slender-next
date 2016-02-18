@@ -4,7 +4,7 @@
      <ol class="tags-list">
      {{ range .Paginator.Pages }}
         <li>
-            <a href="{{ .Permalink }}">
+            <a href="{{ .RelPermalink }}">
             <small>{{ .Date.Format "01-02" }}</small> <strong>{{ .Title }}</strong>
             </a>
         </li>
