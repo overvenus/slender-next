@@ -1,10 +1,11 @@
-+++
-date = "2015-12-16"
-description = ""
-keywords = []
-title = "Creating a new theme"
+---
+date: "2015-12-16"
+description:
+keywords:
 
-+++
+title: "Creating a new theme"
+
+---
 
 ## Introduction
 

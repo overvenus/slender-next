@@ -1,21 +1,21 @@
-+++
-date = "2015-12-16"
-description = "About Slender"
-keywords = ["hugo", "slender", "about"]
-title = "about"
+---
+date: 2016-02-19T17:08:05+08:00
+description: hello
+keywords:
+- world
+title: about
+toc: "off"
+---
 
-+++
-
-Slender
+Slender-Next
 =======
 
-Minimalist theme for [Hugo](http://gohugo.io/) with [base16](https://github.com/chriskempson/base16) color schemes.
-
-[Demo](https://crimsonray.github.io/slender)
+Yet another sample theme for [Hugo](http://gohugo.io/) with [base16](https://github.com/chriskempson/base16) color schemes.
+Based on [slender](https://github.com/CrimsonRay/slender), inspired by [hexo-theme-next](https://github.com/iissnan/hexo-theme-next)
 
 ### Screenshot
 
-![screenshot](../images/screenshot.png)
+![screenshot](images/screenshot.png)
 
 ### Features
 
@@ -23,13 +23,17 @@ Minimalist theme for [Hugo](http://gohugo.io/) with [base16](https://github.com/
 * Pagination
 * [base16](https://github.com/chriskempson/base16) color schemes
 * Code/syntax highlighting with [highlight.js 9.0.0](https://highlightjs.org/)
-* Social links with [FontAwesome 4.5.0](https://fortawesome.github.io/Font-Awesome/)
-* Google Analytics integration
 * Proper meta tags for SEO
+* Optimized for Chinese User
+* Google Analytics And Baidu Tongji integration
+* Diqus And Duoshuo integration
+* MathJax Support
+* Table of Content
+* Tags + Archive
 
 ### Color Schemes
 
-![slender-color-schemes](../images/slender-color-schemes.png)
+![slender-color-schemes](images/slender-color-schemes.png)
 
 ### Installation
 
@@ -45,22 +49,23 @@ Minimalist theme for [Hugo](http://gohugo.io/) with [base16](https://github.com/
     $ cd your_site/
     $ mkdir themes
     $ cd themes
-    $ git clone https://github.com/CrimsonRay/slender
+    $ git clone https://github.com/overvenus/slender-next
     ```
 
 ### Configuration
 
 ```toml
 # config.toml
-# https://github.com/CrimsonRay/slender
+# https://github.com/overvenus/slender-next
 
 baseurl = "http://url-to-your-site.com/"
 title = "Your Title"
+# set "zh-Hans", turn on optimization.
 languageCode = "en-US"
-MetaDataFormat = "toml"
-theme = "slender"
-paginate = 3
-PaginatePath = "/"
+MetaDataFormat = "yaml"
+theme = "slender-next"
+paginate = 5
+PaginatePath = "/page/"
 
 [author]
     name = "Your Name"
@@ -71,7 +76,13 @@ PaginatePath = "/"
     page = "/:title/"
 
     # Permalink format for blog posts.
-    post = "/article/:title/"
+    post = "/:year/:month/:day/:title/"
+
+[taxonomies]
+    # tags -> menu.main.tags
+    tag = "tags"
+    # archive -> menu.main.archive
+    archive = "archive"
 
 [params]
 
@@ -82,8 +93,8 @@ PaginatePath = "/"
     # Tagline; HTML accepted here. Keep it concise.
     tagline = "Your Tagline"
 
-    # Footer; Markdown accepted here.
-    footer = "Copyright 2015 &copy; Your Name"
+    # copyright, see http://creativecommons.org/
+    licenses = "by-nc-sa"
 
     # Description and keywords for <meta> tags.
     # Remember to set this for your main page.
@@ -93,35 +104,50 @@ PaginatePath = "/"
     description = "Default Page Description"
     keywords = "default,page,keywords"
 
-    # Social links, must be full URLs (e.g. https://github.com/CrimsonRay/).
-    # Remove, comment, or leave blank any field to leave them out.
-    email = "mailto:your-email"
-    github = "url-to-your-github"
-    bitbucket = "url-to-your-bitbucket"
-    twitter = "url-to-your-twitter"
-    stackoverflow = "url-to-your-stackoverflow"
-    linkedin = "url-to-your-linkedin"
-    facebook = "url-to-your-facebook"
-
-    # Google Analytics
+    # Analytics
     # Remove, comment, or leave it blank if you don't have one.
-    ganalytics = "your-google-analytics-tracking-code"
+    googleAnalytics = "GoogleAnalyticsParams"
+    baiduTongji = "BaiduTongji"
+
+    # comment
+    duoshuoShortname = "your-duoshuo"
+    disqusShortname = "you-disqus"
+
+    # MathJax
+    # see: http://mathjax.readthedocs.org/en/latest/options/hub.html
+    mathjax = true # enable
+    mathHideMenu = false
+    mathZoom = "Double-Click"
+    mathRenderer = "SVG"
 
 [menu]
 
     # Menu for the nav bar.
     # There must always be one item present (e.g. home).
+    # identifier: Font Awesome icon name
     [[menu.main]]
-    identifier = "home"
-    name       = "home"
+    identifier = "fa-home"
+    name       = "Home"
     url        = "/"
     weight     = 0
 
     [[menu.main]]
-    identifier = "about"
-    name       = "about"
+    identifier = "fa-user"
+    name       = "About"
     url        = "/about/"
     weight     = 1
+
+    [[menu.main]]
+    identifier = "fa-archive"
+    name       = "Archive"
+    url        = "/archive/"
+    weight     = 2
+
+    [[menu.main]]
+    identifier = "fa-tags"
+    name       = "Tags"
+    url        = "/tags/"
+    weight     = 3
 ```
 
 ### Usage 
@@ -142,4 +168,6 @@ Add the new page to navbar in `config.toml` under `[menu]`.
 
 ### License
 
-MIT &copy; 2015 CrimsonRay
+[MIT](LICENSE.md) &copy; 2015 CrimsonRay
+
+[MIT](LICENSE.md) &copy; 2016 Neil Shen

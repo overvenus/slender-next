@@ -1,10 +1,11 @@
-+++
-date = "2015-12-16"
-description = ""
-keywords = []
-title = "Getting Started with Hugo"
+---
+date: "2015-12-16"
+description:  ""
+keywords: 
 
-+++
+title: "Getting Started with Hugo"
+
+---
 
 ## Step 1. Install Hugo
 

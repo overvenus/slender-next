@@ -1,10 +1,11 @@
-+++
-date = "2015-12-16"
-description = ""
-keywords = []
-title = "(Hu)go Template Primer"
+---
+date: "2015-12-16"
+description: 
+keywords: 
 
-+++
+title: "(Hu)go Template Primer"
+
+---
 
 Hugo uses the excellent [go][] [html/template][gohtmltemplate] library for
 its template engine. It is an extremely lightweight engine that provides a very
