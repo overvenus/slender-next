@@ -41,6 +41,10 @@ nav ul li {
     border-bottom: 1px solid transparent;
 }
 
+nav li:hover {
+    border-bottom: 1px solid #FFF;
+}
+
 nav a {
     text-decoration: none;
 }
@@ -97,8 +101,11 @@ header p a .fa {
     border-bottom: 0px;
 }
 
+#toc a {
+    color: black;
+}
+
 #toc a:hover {
-    /* TODO: sync color scheme */
     border-bottom: 1px solid;
 }
 
@@ -220,9 +227,10 @@ article {
     border-bottom: 1px solid transparent;
 }
 
-.terms-content a,
-.article-tags a {
+.terms-content li a,
+.article-tags li a {
     text-decoration: none;
+    color: black;
 }
 
 .terms-content .archive-list,
@@ -265,6 +273,20 @@ footer p {
     padding-top: 24px;
 }
 
+/* Blockquote */
+
+blockquote {
+    padding-left: 3%;
+    border-left: 2px solid;
+    border-color: #000;
+}
+
+/* Overflows */
+
+code, pre{
+    overflow: auto;
+}
+
 
 /* Smaller screen sizes */
 
@@ -277,17 +299,15 @@ footer p {
         margin-right: 6px;
     }
 
-    /* overflows */
-
-    .MathJax_Display, .MathJax_SVG_Display,
-    code, blockquote {
-        overflow: auto;
-    }
-
     #article-listing {
         margin: 20px;
     }
     .article-content {
         margin: 20px;
+    }
+
+    .MathJax_Display, .MathJax_SVG_Display,
+    blockquote {
+        overflow: auto;
     }
 }

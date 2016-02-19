@@ -31,15 +31,14 @@
     padding: 2px 4px;
 }
 
-.color-scheme-white h1.brand {
-    color: #F5F5F5;
-    background-color: #000;
-}
-
 .color-scheme-white .terms-content a:hover,
 .color-scheme-white .article-tags li:hover,
 .color-scheme-white nav li:hover {
     border-bottom: 1px solid;
+}
+
+.color-scheme-white header nav li:hover {
+    border-bottom: 1px solid #000;
 }
 
 /* BLACK -- base00 -- #151515 */
@@ -69,7 +68,7 @@
 .color-scheme-black .terms-content a:hover,
 .color-scheme-black .article-tags li:hover,
 .color-scheme-black nav li:hover {
-    border-bottom: 1px solid #F5F5F5;
+    border-bottom: 1px solid #151515;
 }
 
 /* RED -- base08 -- #AC4142 */
@@ -96,10 +95,19 @@
     padding: 2px 4px;
 }
 
+.color-scheme-red #toc {
+    border-left-color: #AC4142;
+}
+
+.color-scheme-red blockquote,
+.color-scheme-red .terms-content ul {
+    border-color: #AC4142;
+}
+
+.color-scheme-red #toc a:hover,
 .color-scheme-red .terms-content a:hover,
-.color-scheme-red .article-tags li:hover,
-.color-scheme-red li:hover {
-    border-bottom: 1px solid #FFF
+.color-scheme-red .article-tags li:hover {
+    border-bottom: 1px solid #AC4142;
 }
 
 /* ORANGE -- base09 -- #D28445 */
@@ -126,10 +134,19 @@
     padding: 2px 4px;
 }
 
+.color-scheme-orange #toc {
+    border-left-color: #D28445;
+}
+
+.color-scheme-orange blockquote,
+.color-scheme-orange .terms-content ul {
+    border-color: #D28445;
+}
+
+.color-scheme-orange #toc a:hover,
 .color-scheme-orange .terms-content a:hover,
-.color-scheme-orange .article-tags li:hover,
-.color-scheme-orange li:hover {
-    border-bottom: 1px solid #FFF
+.color-scheme-orange .article-tags li:hover {
+    border-bottom: 1px solid #D28445;
 }
 
 /* YELLOW -- base0A -- #F4BF75 */
@@ -156,10 +173,19 @@
     padding: 2px 4px;
 }
 
+.color-scheme-yellow #toc {
+    border-left-color: #F4BF75;
+}
+
+.color-scheme-yellow blockquote,
+.color-scheme-yellow .terms-content ul {
+    border-color: #F4BF75;
+}
+
+.color-scheme-yellow #toc a:hover,
 .color-scheme-yellow .terms-content a:hover,
-.color-scheme-yellow .article-tags li:hover,
-.color-scheme-yellow li:hover {
-    border-bottom: 1px solid #FFF
+.color-scheme-yellow .article-tags li:hover {
+    border-bottom: 1px solid #F4BF75;
 }
 
 /* GREEN -- base0B -- #90A959 */
@@ -186,10 +212,19 @@
     padding: 2px 4px;
 }
 
+.color-scheme-green #toc {
+    border-left-color: #90A959;
+}
+
+.color-scheme-green blockquote,
+.color-scheme-green .terms-content ul {
+    border-color: #90A959;
+}
+
+.color-scheme-green #toc a:hover,
 .color-scheme-green .terms-content a:hover,
-.color-scheme-green .article-tags li:hover,
-.color-scheme-green li:hover {
-    border-bottom: 1px solid #FFF
+.color-scheme-green .article-tags li:hover {
+    border-bottom: 1px solid #90A959;
 }
 
 /* TEAL -- base0C -- #75B5AA */
@@ -216,10 +251,19 @@
     padding: 2px 4px;
 }
 
+.color-scheme-teal #toc {
+    border-left-color: #75B5AA;
+}
+
+.color-scheme-teal blockquote,
+.color-scheme-teal .terms-content ul {
+    border-color: #75B5AA;
+}
+
+.color-scheme-teal #toc a:hover,
 .color-scheme-teal .terms-content a:hover,
-.color-scheme-teal .article-tags li:hover,
-.color-scheme-teal li:hover {
-    border-bottom: 1px solid #FFF
+.color-scheme-teal .article-tags li:hover {
+    border-bottom: 1px solid #75B5AA;
 }
 
 /* BLUE -- base0D -- #6A9FB5 */
@@ -246,10 +290,19 @@
     padding: 2px 4px;
 }
 
+.color-scheme-blue #toc {
+    border-left-color: #6A9FB5;
+}
+
+.color-scheme-blue blockquote,
+.color-scheme-blue .terms-content ul {
+    border-color: #6A9FB5;
+}
+
+.color-scheme-blue #toc a:hover,
 .color-scheme-blue .terms-content a:hover,
-.color-scheme-blue .article-tags li:hover,
-.color-scheme-blue li:hover {
-    border-bottom: 1px solid #FFF
+.color-scheme-blue .article-tags li:hover {
+    border-bottom: 1px solid #6A9FB5;
 }
 
 /* PURPLE -- base0E -- #AA759F */
@@ -276,8 +329,17 @@
     padding: 2px 4px;
 }
 
+.color-scheme-purple #toc {
+    border-left-color: #AA759F;
+}
+
+.color-scheme-purple blockquote,
+.color-scheme-purple .terms-content ul {
+    border-color: #AA759F;
+}
+
+.color-scheme-purple #toc a:hover,
 .color-scheme-purple .terms-content a:hover,
-.color-scheme-purple .article-tags li:hover,
-.color-scheme-purple li:hover {
-    border-bottom: 1px solid #FFF
+.color-scheme-purple .article-tags li:hover {
+    border-bottom: 1px solid #AA759F;
 }
