@@ -2,18 +2,18 @@
 
 name = "Slender-next"
 license = "MIT"
-licenselink = "https://github.com/CrimsonRay/slender/blob/master/LICENSE.md"
-description = "Minimalist theme for Hugo with base16 color schemes."
-homepage = "https://crimsonray.github.io/slender/"
-tags = ["hugo", "blog", "slender"]
+licenselink = "https://github.com/overvenus/slender-next/blob/master/LICENSE.md"
+description = "Yet another sample theme for Hugo with base16 color schemes."
+homepage = ""
+tags = ["hugo", "blog", "slender", "slender-next"]
 features = ["blog"]
 min_version = 0.14
 
 [author]
-  name = "CrimsonRay"
-  homepage = "https://github.com/CrimsonRay/"
+  name = "Neil Shen"
+  homepage = "https://github.com/overvenus/"
 
 [original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "CrimsonRay"
+  homepage = "https://crimsonray.github.io/slender/"
+  repo = "https://github.com/CrimsonRay/"
