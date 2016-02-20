@@ -163,8 +163,9 @@ img {
     height: auto;
 }
 
-/* Articles */
+/* Articles & Comments */
 
+.comment-content,
 #article-listing,
 .article-content {
     margin: 88px auto;
