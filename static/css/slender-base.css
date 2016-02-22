@@ -272,6 +272,49 @@ blockquote {
     border-color: #000;
 }
 
+/*
+Table
+  see: https://github.com/iissnan/hexo-theme-next/blob/master/source/css/_common/scaffolding/tables.styl
+*/
+
+table {
+  margin: 20px 0;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+table>tbody>tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+table>tbody>tr:hover {
+  background-color: #f5f5f5;
+}
+
+caption, th, td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+th, td {
+  border-bottom: 3px solid #ddd;
+  border-right: 1px solid #eee;
+}
+
+th {
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+td {
+  border-bottom-width: 1px;
+}
+
 /* Overflows */
 
 code, pre{
