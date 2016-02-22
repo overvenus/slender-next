@@ -267,6 +267,7 @@ footer p {
 /* Blockquote */
 
 blockquote {
+    margin-left: auto;
     padding-left: 3%;
     border-left: 2px solid;
     border-color: #000;
