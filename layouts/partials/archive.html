@@ -2,9 +2,8 @@
 <ul class="archive-list">
     {{ range (where .Site.Pages "Section" "post").ByDate.Reverse }}
     <li>
-        <a href="{{ .RelPermalink }}">
-        <small>{{ .Date.Format "01-02" }}</small> <strong>{{ .Title }}</strong>
-        </a>
+        <small>{{ .Date.Format "2006-01-02" }}</small> <br/>
+        <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
     </li>
     {{ end }}
 </ul>

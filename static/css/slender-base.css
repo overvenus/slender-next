@@ -217,7 +217,7 @@ article {
 .article-tags {
     margin: 88px auto;
     max-width: 768px;
-    text-align: center; 
+    text-align: center;
 }
 
 .terms-content .tags-list li,
@@ -251,16 +251,6 @@ article {
     display: list-item;
     margin: 0px 20%;
     text-align: left;
-}
-
-.archive-list li a,
-ol.tags-list li a {
-    margin-left: 10px;
-}
-
-.archive-list li small,
-ol.tags-list li small {
-    padding-right: 10px;
 }
 
 /* Footer */
