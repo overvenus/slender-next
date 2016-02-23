@@ -175,8 +175,15 @@ img {
     max-width: 768px;
 }
 
+.article-eof {
+    display: block;
+    background: #ccc;
+    padding: 1px 1px;
+    margin: 80px 21%;
+}
+
 article {
-    margin-top: 28px;
+    margin: 8% 0px;
 }
 
 .article-title {
@@ -197,7 +204,7 @@ article {
 
 .article-summary {
     margin-top: 22px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
 }
 
