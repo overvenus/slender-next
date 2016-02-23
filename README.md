@@ -4,29 +4,29 @@ Slender-Next
 Yet another sample theme for [Hugo](http://gohugo.io/) with [base16](https://github.com/chriskempson/base16) color schemes.
 Based on [slender](https://github.com/CrimsonRay/slender), inspired by [hexo-theme-next](https://github.com/iissnan/hexo-theme-next)
 
-### Screenshot
+## Screenshot
 
 ![screenshot](images/screenshot.png)
 
-### Features
+## Features
 
 * Responsive
 * Pagination
 * [base16](https://github.com/chriskempson/base16) color schemes
-* Code/syntax highlighting with [highlight.js 9.0.0](https://highlightjs.org/)
+* Code/syntax highlighting with [highlight.js 9.1.0](https://highlightjs.org/)
 * Proper meta tags for SEO
-* Optimized for Chinese User
+* **Optimized for China**
 * Google Analytics And Baidu Tongji integration
-* Diqus And Duoshuo integration
+* Disqus And Duoshuo integration
 * MathJax Support
 * Table of Content
 * Tags + Archive
 
-### Color Schemes
+## Color Schemes
 
 ![slender-color-schemes](images/slender-color-schemes.png)
 
-### Installation
+## Installation
 
 1. Make a new Hugo site
 
@@ -43,7 +43,7 @@ Based on [slender](https://github.com/CrimsonRay/slender), inspired by [hexo-the
     $ git clone https://github.com/overvenus/slender-next
     ```
 
-### Configuration
+## Configuration
 
 ```toml
 # config.toml
@@ -85,7 +85,7 @@ PaginatePath = "/page/"
     tagline = "Your Tagline"
 
     # copyright, see http://creativecommons.org/
-    licenses = "by-nc-sa"
+    licenses = "BY-NC-SA"
 
     # Description and keywords for <meta> tags.
     # Remember to set this for your main page.
@@ -100,7 +100,11 @@ PaginatePath = "/page/"
     googleAnalytics = "GoogleAnalyticsParams"
     baiduTongji = "BaiduTongji"
 
-    # comment
+    # Comment
+    # Remove or comment if you don't have one.
+    # if both set,
+    #    zh-Hans: duoshuoShortname > disqusShortname
+    #    else: disqusShortname > duoshuoShortname
     duoshuoShortname = "your-duoshuo"
     disqusShortname = "you-disqus"
 
@@ -141,7 +145,7 @@ PaginatePath = "/page/"
     weight     = 3
 ```
 
-### Usage 
+## Usage 
 
 **Making a new post / article**
 
@@ -157,7 +161,27 @@ $ hugo new page/about.md
 
 Add the new page to navbar in `config.toml` under `[menu]`.
 
-### License
+**Turn on MathJax**
+
+Post's front matter. Default: "off"
+
+```yaml
+---
+mathjax: "on"
+---
+```
+
+**Turn off TOC**
+
+Post's front matter. Default: "on"
+
+```yaml
+---
+toc: "off"
+---
+```
+
+## License
 
 [MIT](LICENSE.md) &copy; 2015 CrimsonRay
 
