@@ -231,7 +231,6 @@ article {
 }
 
 .terms-content .tags-list li,
-.terms-content .archive-list li,
 .article-tags ul li {
     display: inline-block;
     margin: 0px 10px;
@@ -253,14 +252,20 @@ article {
 
 .terms-content .archive-list,
 .terms-content ol.tags-list {
-    margin: 0px 10%;
+    margin-left: 10%;
 }
 
 .terms-content .archive-list li,
 .terms-content ol.tags-list li {
     display: list-item;
-    margin: 0px 20%;
+    margin: 15px 0px 15px 20%;
     text-align: left;
+}
+
+.terms-content .archive-list li.archive-list-year {
+    display: block;
+    font-size: 28px;
+    margin: 2% 15%;
 }
 
 /* Footer */

@@ -1,8 +1,13 @@
 <p> <strong>Archive</strong> </p>
 <ul class="archive-list">
+    {{ $.Scratch.Set "archiveYear" "0001" }}
     {{ range (where .Site.Pages "Section" "post").ByDate.Reverse }}
+        {{ if ne ($.Scratch.Get "archiveYear") (.Date.Format "2006") }}
+            {{ $.Scratch.Set "archiveYear" (.Date.Format "2006") }}
+            <li class="archive-list-year">{{ $.Scratch.Get "archiveYear" }}</li>
+        {{ end }}
     <li>
-        <small>{{ .Date.Format "2006-01-02" }}</small> <br/>
+        <small>{{ .Date.Format "01-02" }}</small> <br/>
         <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
     </li>
     {{ end }}
