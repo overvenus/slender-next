@@ -86,6 +86,7 @@ PaginatePath = "/page/"
 
     # copyright, see http://creativecommons.org/
     licenses = "BY-NC-SA"
+    copyrightYear = "2015 - 2016"
 
     # Description and keywords for <meta> tags.
     # Remember to set this for your main page.
@@ -145,7 +146,7 @@ PaginatePath = "/page/"
     weight     = 3
 ```
 
-## Usage 
+## Usage
 
 **Making a new post / article**
 
