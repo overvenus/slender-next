@@ -182,6 +182,10 @@ toc: "off"
 ---
 ```
 
+**Favicon**
+
+Put your favicon (both `png` and `icon` format) in `static/assets/`
+
 ## License
 
 [MIT](LICENSE.md) &copy; 2015 CrimsonRay

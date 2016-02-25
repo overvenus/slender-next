@@ -2,7 +2,11 @@
 <html lang="{{ .Site.LanguageCode }}">
     <head>
         {{ partial "meta.html" . }}
-        <link rel="icon" href="{{ "/assets/favicon.ico" | absURL }}" type="image/x-icon">
+        <link rel="icon" href="/assets/favicon.png">
+        {{ "<!--[if IE]>" | safeHTML }}
+        <link rel="shortcut icon" href="/assets/favicon.ico">
+        {{ "<![endif]-->" | safeHTML }}
+        <link rel="apple-touch-icon" href="/assets/favicon.png">
         {{ if eq .Site.LanguageCode "zh-Hans" }}
         <link rel="stylesheet" href="/css/slender-font-zh.css">
         {{ else }}
