@@ -87,7 +87,7 @@ header aside {
     margin-left: 80%;
     overflow: auto;
     border-left: 2px solid;
-    max-width: 20%;
+    width: 13%;
     max-height: 50%;
     background-color: #F5F5F5;
 }
@@ -324,6 +324,10 @@ th {
 
 td {
   border-bottom-width: 1px;
+}
+
+code {
+  line-height: 20px;
 }
 
 /* Overflows */
