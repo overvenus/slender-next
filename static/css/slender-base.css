@@ -4,6 +4,10 @@
  * Slender theme for Hugo by CrimsonRay
  * https://github.com/CrimsonRay/slender
  *
+ * slender-base.css
+ * Slender-Next theme for Hugo by Neil Shen
+ * https://github.com/overvenus/slender-next
+ *
  *****************************************************************************/
 
 body {
@@ -199,7 +203,7 @@ article {
 
 .article-summary {
     margin-top: 22px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: justify;
 }
 
@@ -248,6 +252,7 @@ article {
 .terms-content .archive-list,
 .terms-content ol.tags-list {
     margin-left: 10%;
+    margin-right: 10%;
 }
 
 .terms-content .archive-list li,
@@ -279,8 +284,10 @@ footer p {
 blockquote {
     margin-left: auto;
     padding-left: 3%;
-    border-left: 2px solid;
+    border-left: 3px solid;
     border-color: #000;
+    font-style: italic;
+    color: black;
 }
 
 /*
@@ -327,6 +334,12 @@ td {
 }
 
 code {
+  font-style: initial;
+  background-color: #fafafa;
+  padding: 2px 4px;
+}
+
+pre {
   line-height: 20px;
 }
 
@@ -348,9 +361,7 @@ code, pre{
         margin-right: 6px;
     }
 
-    #article-listing {
-        margin: 20px;
-    }
+    #article-listing, .comment-content,
     .article-content {
         margin: 20px;
     }
